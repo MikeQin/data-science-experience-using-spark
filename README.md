@@ -49,9 +49,9 @@ Download Apache Spark [here](http://spark.apache.org/downloads.html). I download
 
 Unzip it, and copy `spark-2.1.0-bin-hadoop2.7` folder to `C:\Programs\`
 
-### Install winutils.exe
+### Install winutils.exe for Spark
 
-In Windows, winutils.exe is required. winutils.exe can be downloaded 64-bit version [here](https://github.com/steveloughran/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe)
+In Windows, winutils.exe is required to run Spark-Shell. Downloaded winutils.exe 64-bit version [here](https://github.com/steveloughran/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe)
 
 Create a hadoop folder on your hard drive, for example:
 
@@ -59,7 +59,7 @@ Create a hadoop folder on your hard drive, for example:
 
 Copy `winutils.exe` into `C:\Programs\hadoop\bin`
 
-### Grant `tmp\hive` Folder Full Permission (777)
+### Grant `tmp\hive` Folder Full Permission (777) for Spark
 
 Now you need to grand permission to \tmp\hive folder using winutils
 
@@ -69,7 +69,7 @@ Check permission after grant
 
 `winutils.exe ls \tmp\hive`
 
-Additionally, I recommend to grant `C:\Users\[YourUserName]\AppData\Local\Temp` folder full permission (777) for Jupyter Notebook App to delete `spark-temp` folder upon exit.
+Additionally, I recommend to grant `C:\Users\[YourUserName]\AppData\Local\Temp` folder full permission (777) for Spark to delete `spark-temp` folder upon exit.
 
 `winutils.exe chmod 777 C:\Users\[YourUserName]\AppData\Local\Temp`
 
