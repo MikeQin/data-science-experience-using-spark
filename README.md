@@ -12,9 +12,9 @@
 
 There are two parts:
 
-- Install Jupyter Notebook App in Windows
+- Installation
 - Workshops:
-  * Introduction to Spark
+  * Spark Basics
   * Spark SQL
   * Spark Machine Learning (ML)
   
@@ -56,7 +56,7 @@ Create a hadoop folder on your hard drive, for example:
 
 `C:\Programs\hadoop\bin`
 
-> Copy `winutils.exe` into `C:\Programs\hadoop\bin`
+Copy `winutils.exe` into `C:\Programs\hadoop\bin`
 
 ### Grant `tmp\hive` Folder Full Permission (777)
 
@@ -79,3 +79,11 @@ PYSPARK_DRIVER_PYTHON_OPTS=notebook
 PYTHONPATH=%SPARK_HOME%/python;%SPARK_HOME%/python/lib/py4j-0.10.4-src.zip;C:\Programs\Anaconda2
 Path=%Path%;%JAVA_HOME%\bin;%HADOOP_HOME%\bin;%SPARK_HOME%\bin;%PYTHONPATH%
 ```
+
+## Workshops
+
+### Spark Basics
+
+### Spark SQL
+
+### Spark Machine Learning (ML)
