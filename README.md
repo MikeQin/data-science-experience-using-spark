@@ -3,11 +3,12 @@
 "Data Science Experience Using Spark" is a workshop-type of learning experience. Upon completion, you will be able to:
 
 - Understand Jupyter Notebook App
-- Gain basic knowledge of Python
-- Know how to use Jupyter Notebook to run Spark applications
+- Learn basic knowledge of Python
+- Learn how to use Jupyter Notebook to run Spark applications
 - Learn Spark basics
 - Use Spark to solve basic analytical problems
-- Know how to create RDD and DataFrame in Spark
+- Learn how to create RDD and DataFrame in Spark
+- Learn Data Visualization Using Pandas
 - Perform Machine Learning using Spark ML
 
 There are two parts:
