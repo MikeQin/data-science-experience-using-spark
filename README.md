@@ -69,6 +69,10 @@ Check permission after grant
 
 `winutils.exe ls \tmp\hive`
 
+Additionally, I recommend to grant `C:\Users\[YourUserName]\AppData\Local\Temp` folder full permission (777) for Jupyter Notebook App to delete `spark-temp` folder upon exit.
+
+`winutils.exe chmod 777 C:\Users\[YourUserName]\AppData\Local\Temp`
+
 ### Set Windows Environment Variables
 
 ```
