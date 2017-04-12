@@ -35,6 +35,7 @@ Use the following installation steps:
   1. Download [Anaconda](https://www.continuum.io/downloads). I recommend downloading Anaconda’s Python 2.7 version (currently Python 3.5).
 
   2. Install the version of Anaconda which you downloaded, following the instructions on the download page.
+  Please note, the installation folder: `C:\Programs\Anaconda2`, for example
 
   3. Congratulations, you have installed Jupyter Notebook. To run the notebook:
   
