@@ -14,7 +14,7 @@
 There are two parts:
 
 - Installation
-- Workshops:
+- Workshops in Python Language:
   * Spark Basics
   * Spark SQL
   * Spark Machine Learning (ML)
@@ -112,7 +112,7 @@ In CMD window,
 
 ![spark-shell-02](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/docs/spark-shell-02.jpg)
 
-`:q` to quit from `Scala>` shell.
+`:q` to quit from `scala>` shell.
 
 ## Workshops in Python Language
 
