@@ -45,7 +45,7 @@ Use the following installation steps:
  To run the notebook:
   
  - Option 1: From Start -> All Programs -> Anaconda2 -> Jupyter Notebook
- - Option 2: In CMD window, `C:\workspace\jupyter notebook`. Please note, that if you run `jupyter notebook` command from a root, such as `C:\jupyter notebook`, you will get a `404 Page Not Found` error. Basically, you can start Jupyter Notebook in any arbitrary directory other than root, you'll be fine.
+ - Option 2: In CMD window, `C:\workspace\jupyter notebook`, or alternatively, `C:\workspace\pyspark` Please note, that if you run `jupyter notebook` command from a root, such as `C:\jupyter notebook`, you will get a `404 Page Not Found` error. Basically, you can start Jupyter Notebook in any arbitrary directory other than root, you'll be fine.
  
 ![jupyter-01](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/docs/jupyter-01.jpg)
 
@@ -114,7 +114,7 @@ In CMD window,
 
 `:q` to quit from `Scala>` shell.
 
-## Workshops
+## Workshops in Python Language
 
 After adding/loading a notebook module into Jupyter, and before you can run any Python Spark code, you need to initialize Spark Context:
 
@@ -131,6 +131,12 @@ sc = SparkContext(conf=conf)
 
 ### Spark Basics
 
+Donwload the Notebook file 'Spark Basics (Lab)' [here](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/notebooks/1.%20Spark%20Basics%20(Lab).ipynb).
+
 ### Spark SQL
 
+Donwload the Notebook file 'Spark SQL (Lab)' [here](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/notebooks/2.%20Spark%20SQL%20(Lab).ipynb).
+
 ### Spark Machine Learning (ML)
+
+Donwload the Notebook file 'Spark Machine Learning (ML) (Lab)' [here](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/notebooks/3.%20Spark%20Machine%20Learning%20(Lab).ipynb).
