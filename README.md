@@ -33,16 +33,21 @@ For new users, we highly recommend installing Anaconda. Anaconda conveniently in
 
 Use the following installation steps:
 
-  1. Download [Anaconda](https://www.continuum.io/downloads). I recommend downloading Anaconda’s Python 2.7 version (currently Python 3.5).
+ 1. Download [Anaconda](https://www.continuum.io/downloads). I recommend downloading Anaconda’s Python 2.7 version (currently Python 3.5).
 
-  2. Install the version of Anaconda which you downloaded, following the instructions on the download page.
+ 2. Install the version of Anaconda which you downloaded, following the instructions on the download page.
   Please note, the installation folder: `C:\Programs\Anaconda2`, for example
 
-  3. Congratulations, you have installed Jupyter Notebook. To run the notebook:
+ 3. Congratulations, you have installed Jupyter Notebook.
+
+### Verify Jupyter Notebook Installation
+
+ To run the notebook:
   
-  ``` 
-  jupyter notebook
-  ```
+ - Option 1: From Start -> All Programs -> Anaconda2 -> Jupyter Notebook
+ - Option 2: In CMD window, `C:\workspace\jupyter notebook`. Please note, that if you run `jupyter notebook` command from a root, such as `C:\jupyter notebook`, you will get a `404 Page Not Found` error. Basically, you can start Jupyter Notebook in any arbitrary directory other than root, you'll be fine.
+ 
+![jupyter-01](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/docs/jupyter-01.jpg)
 
 ### Install Spark
 
@@ -91,6 +96,24 @@ PYTHONPATH=%SPARK_HOME%/python;%SPARK_HOME%/python/lib/py4j-0.10.4-src.zip;C:\Pr
 Path=%Path%;%JAVA_HOME%\bin;%HADOOP_HOME%\bin;%SPARK_HOME%\bin;%PYTHONPATH%
 ```
 
+### Verify Spark Installation
+
+In CMD window, 
+
+`spark-submit --version`
+
+![spark-shell-03](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/docs/spark-shell-03.jpg)
+
+`spark-shell`
+
+![spark-shell-01](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/docs/spark-shell-01.jpg)
+
+`(0 to 1).toDS.show`
+
+![spark-shell-02](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/docs/spark-shell-02.jpg)
+
+`:q` to quit from `Scala>` shell.
+
 ## Workshops
 
 After adding/loading a notebook module into Jupyter, and before you can run any Python Spark code, you need to initialize Spark Context:
@@ -103,6 +126,8 @@ from pyspark import SparkConf, SparkContext
 conf = SparkConf().setAppName("sample_app")
 sc = SparkContext(conf=conf)
 ```
+
+![jupyter-02](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/docs/jupyter-02.jpg)
 
 ### Spark Basics
 
