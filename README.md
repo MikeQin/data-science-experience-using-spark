@@ -49,6 +49,11 @@ Download Apache Spark [here](http://spark.apache.org/downloads.html). I download
 
 Unzip it, and copy `spark-2.1.0-bin-hadoop2.7` folder to `C:\Programs\`
 
+Configure Spark:
+
+1. Go into your spark/conf folder and rename log4j.properties.template to log4j.properties
+2. Open log4j.properties in a text editor and change log4j.rootCategory to WARN from INFO
+
 ### Install winutils.exe for Spark
 
 In Windows, winutils.exe is required to run Spark-Shell. Downloaded winutils.exe 64-bit version [here](https://github.com/steveloughran/winutils/raw/master/hadoop-2.6.0/bin/winutils.exe)
