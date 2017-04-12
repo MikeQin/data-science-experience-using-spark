@@ -7,7 +7,7 @@
 - Learn How to Use Jupyter Notebook to Run Spark Applications
 - Learn Spark Basics
 - Use Spark to Solve Basic Analytical Problems
-- Learn how to Create RDD and DataFrame in Spark
+- Learn How to Create RDD and DataFrame in Spark
 - Learn Data Visualization Using Pandas
 - Perform Machine Learning Using Spark ML
 
