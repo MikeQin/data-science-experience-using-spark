@@ -87,6 +87,17 @@ Path=%Path%;%JAVA_HOME%\bin;%HADOOP_HOME%\bin;%SPARK_HOME%\bin;%PYTHONPATH%
 
 ## Workshops
 
+After adding/loading a notebook module into Jupyter, and before you can run any Python Spark code, you need to initialize Spark Context:
+
+```
+# Initializing PySpark
+from pyspark import SparkConf, SparkContext
+
+# Spark Config
+conf = SparkConf().setAppName("sample_app")
+sc = SparkContext(conf=conf)
+```
+
 ### Spark Basics
 
 ### Spark SQL
