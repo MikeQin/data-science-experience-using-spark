@@ -1,4 +1,4 @@
-# Data Science Experience Using Spark
+# Data Science Experience Using Spark on Jupyter Notebook
 
 "Data Science Experience Using Spark" is a workshop-type of learning experience. Upon completion, you will be able to:
 
