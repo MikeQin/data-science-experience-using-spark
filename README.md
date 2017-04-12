@@ -116,7 +116,7 @@ In CMD window,
 
 ## Workshops in Python Language
 
-After adding/loading a notebook module into Jupyter, and before you can run any Python Spark code, you need to initialize Spark Context:
+After adding/loading a notebook module into Jupyter, and before you can run any Python Spark code, you can initialize Spark Context like this (below) if it's not being initialized:
 
 ```
 # Initializing PySpark
@@ -126,6 +126,8 @@ from pyspark import SparkConf, SparkContext
 conf = SparkConf().setAppName("sample_app")
 sc = SparkContext(conf=conf)
 ```
+
+Here is how a Notebook (Lab) looks like:
 
 ![jupyter-02](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/docs/jupyter-02.jpg)
 
