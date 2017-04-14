@@ -85,7 +85,9 @@ PYSPARK_DRIVER_PYTHON_OPTS=notebook
 PYTHONPATH=%SPARK_HOME%/python;%SPARK_HOME%/python/lib/py4j-0.10.4-src.zip;C:\Programs\Anaconda2
 Path=%Path%;%JAVA_HOME%\bin;%HADOOP_HOME%\bin;%SPARK_HOME%\bin;%PYTHONPATH%
 ```
-You can set the above Environment Variables as `System Environment Variables` in Windows. Alternatively, you can create a `setEnv.bat` file to do the same. Just copy the above commands into a text file and save the file as `setEnv.bat`. Once you've done, you can run `setEnv.bat` before you run any other commands in CMD window.
+You can set the above Environment Variables as `System Environment Variables` permanently in Windows. Alternatively, you can create a `setEnv.bat` file, and run it to initialize your CMD shell every time.
+
+Please note that the `Environment Variables'` values contain software specific version numbers. It's for reference only. You shall adjust it to your own environment accordingly.
 
 ### Grant `tmp\hive` Folder Full Permission (777) for Spark
 
