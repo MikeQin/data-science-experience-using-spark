@@ -21,13 +21,17 @@ There are two parts:
   
 ## Installation
 
-The target OS for this workshop is Windows 7, 10.
+The Installation instructions target Windows 7 OS. If you have Windows 10 OS, it's very similar. You should be able to do the same.
 
 ### Install Java JDK
 
-Download Oracle JDK [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html), and install it using the default.
+If your computer already has JDK 1.7 or above installed, you can skip this step. Otherwise, please download Oracle 64-bit JDK [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html), and install it using the default.
 
-### Install Anaconda
+Please note, ideally your computer should have a single JDK installed. Multiple JDKs might cause some unexpected issues.
+
+As you can see later in this document, your `JAVA_HOME` environment variable should be set to the correct JDK path. This is very important.
+
+### Install Anaconda (Python & Jupyter Notebook)
 
 For new users, we highly recommend installing Anaconda. Anaconda conveniently installs Python, the Jupyter Notebook, and other commonly used packages for scientific computing and data science.
 
@@ -44,8 +48,8 @@ Use the following installation steps:
 
  To run the notebook:
   
- - Option 1: From Start -> All Programs -> Anaconda2 -> Jupyter Notebook
- - Option 2: In CMD window, `C:\workspace\jupyter notebook`, or alternatively, `C:\workspace\pyspark` Please note, that if you run `jupyter notebook` command from a root, such as `C:\jupyter notebook`, you will get a `404 Page Not Found` error. Basically, you can start Jupyter Notebook in any arbitrary directory other than root, you'll be fine.
+ - Option 1: (Windows 7) Start -> All Programs -> Anaconda2 -> Jupyter Notebook
+ - Option 2: In CMD window, 'cd' to a folder, such as `C:\workspace`, then run command: `jupyter notebook`. Alternatively, run command:  `pyspark` Please note, that if you run `jupyter notebook` command from a root, such as `C:\`, you will get a `404 Page Not Found` error. Basically, you can start Jupyter Notebook in any arbitrary sub-directory other than the root, you'll be fine.
  
 ![jupyter-01](https://github.com/MikeQin/data-science-experience-using-spark/blob/master/docs/jupyter-01.jpg)
 
@@ -70,6 +74,19 @@ Create a hadoop folder on your hard drive, for example:
 
 Copy `winutils.exe` into `C:\Programs\hadoop\bin`
 
+### Set Windows Environment Variables
+
+```
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_111
+HADOOP_HOME=C:\Programs\hadoop
+SPARK_HOME=C:\Programs\spark-2.1.0-bin-hadoop2.7
+PYSPARK_DRIVER_PYTHON=jupyter
+PYSPARK_DRIVER_PYTHON_OPTS=notebook
+PYTHONPATH=%SPARK_HOME%/python;%SPARK_HOME%/python/lib/py4j-0.10.4-src.zip;C:\Programs\Anaconda2
+Path=%Path%;%JAVA_HOME%\bin;%HADOOP_HOME%\bin;%SPARK_HOME%\bin;%PYTHONPATH%
+```
+You can set the above Environment Variables as `System Environment Variables` in Windows. Alternatively, you can create a `setEnv.bat` file to do the same. Just copy the above commands into a text file and save the file as `setEnv.bat`. Once you've done, you can run `setEnv.bat` before you run any other commands in CMD window.
+
 ### Grant `tmp\hive` Folder Full Permission (777) for Spark
 
 Now you need to grand permission to \tmp\hive folder using winutils
@@ -83,18 +100,6 @@ Check permission after grant
 Additionally, I recommend to grant `C:\Users\[YourUserName]\AppData\Local\Temp` folder full permission (777) for Spark to delete `spark-temp` folder upon exit.
 
 `winutils.exe chmod 777 C:\Users\[YourUserName]\AppData\Local\Temp`
-
-### Set Windows Environment Variables
-
-```
-JAVA_HOME=C:\Program Files\Java\jdk1.8.0_111
-HADOOP_HOME=C:\Programs\hadoop
-SPARK_HOME=C:\Programs\spark-2.1.0-bin-hadoop2.7
-PYSPARK_DRIVER_PYTHON=jupyter
-PYSPARK_DRIVER_PYTHON_OPTS=notebook
-PYTHONPATH=%SPARK_HOME%/python;%SPARK_HOME%/python/lib/py4j-0.10.4-src.zip;C:\Programs\Anaconda2
-Path=%Path%;%JAVA_HOME%\bin;%HADOOP_HOME%\bin;%SPARK_HOME%\bin;%PYTHONPATH%
-```
 
 ### Verify Spark Installation
 
