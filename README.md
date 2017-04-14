@@ -25,7 +25,7 @@ The Installation instructions target Windows 7 OS. If you have Windows 10 OS, it
 
 ### Install Java JDK
 
-If your computer already has JDK 1.7 or above installed, you can skip this step. Otherwise, please download Oracle 64-bit JDK [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html), and install it using the default.
+If your computer already has JDK 1.8 or above installed, you can skip this step. Otherwise, please download Oracle 64-bit JDK [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html), and install it using the default.
 
 Please note, ideally your computer should have a single JDK installed. Multiple JDKs might cause some unexpected issues.
 
